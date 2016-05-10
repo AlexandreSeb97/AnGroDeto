@@ -1,0 +1,1 @@
+web: gunicorn AnGroDeto.wsgi --log-file -
