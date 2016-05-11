@@ -75,12 +75,15 @@ WSGI_APPLICATION = 'AnGroDeto.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+#DATABASES = {
+#   'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#    }
+#}
+
+import dj_database_url
+DATABASES ={'default':dj_database_url.config(default='postgres://qopbnrhujlhden:YGPkHIFOZzi6IbG7axNZlL9ac3@ec2-54-243-54-21.compute-1.amazonaws.com:5432/d1rlfvaqsunreg')}
 
 
 # Internationalization
