@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="915f6c91-5635-4ad7-b444-deea45f26ad2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/market_blog/templates/atik.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/market_blog/templates/atik_blog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnGroDeto/static/css/cover.css" afterPath="$PROJECT_DIR$/AnGroDeto/static/css/cover.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market_blog/admin.py" afterPath="$PROJECT_DIR$/market_blog/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market_blog/models.py" afterPath="$PROJECT_DIR$/market_blog/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market_blog/templates/cover.html" afterPath="$PROJECT_DIR$/market_blog/templates/cover.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market_blog/templates/layout_en.html" afterPath="$PROJECT_DIR$/market_blog/templates/layout_en.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market_blog/urls.py" afterPath="$PROJECT_DIR$/market_blog/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market_blog/views.py" afterPath="$PROJECT_DIR$/market_blog/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/market_blog/templates/atik_blog.html" afterPath="$PROJECT_DIR$/market_blog/templates/atik_blog.html" />
     </list>
     <ignored path="AnGroDeto.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="atik_blog.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="atik_blog.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/market_blog/templates/atik_blog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="252">
+              <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -95,10 +84,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cover.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cover.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/market_blog/templates/cover.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
+            <state relative-caret-position="59">
               <caret line="47" column="59" selection-start-line="47" selection-start-column="59" selection-end-line="47" selection-end-column="59" />
               <folding />
             </state>
@@ -133,9 +122,9 @@
         <option value="$PROJECT_DIR$/market_blog/urls.py" />
         <option value="$PROJECT_DIR$/market_blog/models.py" />
         <option value="$PROJECT_DIR$/AnGroDeto/static/css/cover.css" />
-        <option value="$PROJECT_DIR$/market_blog/templates/atik_blog.html" />
         <option value="$PROJECT_DIR$/market_blog/templates/layout_en.html" />
         <option value="$PROJECT_DIR$/market_blog/templates/cover.html" />
+        <option value="$PROJECT_DIR$/market_blog/templates/atik_blog.html" />
       </list>
     </option>
   </component>
@@ -545,11 +534,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="52" width="1301" height="716" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18964143" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -824,14 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/market_blog/templates/atik_blog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/market_blog/templates/layout_en.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="401">
@@ -842,8 +823,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/market_blog/templates/cover.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
+        <state relative-caret-position="59">
           <caret line="47" column="59" selection-start-line="47" selection-start-column="59" selection-end-line="47" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/market_blog/templates/atik_blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
           <folding />
         </state>
       </provider>
