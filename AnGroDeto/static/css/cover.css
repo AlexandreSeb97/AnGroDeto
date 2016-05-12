@@ -161,3 +161,7 @@ body {
     width: 700px;
   }
 }
+
+.panel-body {
+  background-color: #1b6d85;
+}

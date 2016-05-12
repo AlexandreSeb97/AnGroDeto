@@ -45,8 +45,9 @@
               <h3 class="masthead-brand">AnGroDeto</h3>
               <nav>
                 <ul class="nav masthead-nav">
-                  <li class="active"><a href="#">Akey</a></li>
-                  <li><a href="#">Katalog</a></li>
+                  <li class="active"><a href="{% url 'index' %}">Akey</a></li>
+                  <li><a href="{% url 'atik' %}">Katalog</a></li>
+                  <li><a href="#">AutoLink</a></li>
                   <li><a href="#">Kontak</a></li>
                 </ul>
               </nav>
@@ -57,7 +58,7 @@
             <h1 class="cover-heading">N'ap Vini.</h1>
             <p class="lead">AnGroDeto se yon katalog pou fe marketing tout prodwi gwoup Market AnGroDeto ap vann yo.</p>
             <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Learn more</a>
+              <a href="{% url 'atik' %}" class="btn btn-lg btn-default">Gad Katalog</a>
             </p>
               <p> Jodia se {{ date }} </p>
           </div>

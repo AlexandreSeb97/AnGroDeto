@@ -1,0 +1,19 @@
+{% extends 'layout_en.html' %}
+{% load staticfiles %}
+{% block content %}
+
+ <p></p>
+{% for atik in atiks %}
+ <div class="panel panel-primary">
+    <div class="panel-heading">{{ atik.non_pwodui }}</div>
+    <div class="panel-body">
+        <h3><b>{{ atik.seller }}</b> ap vann pwodui sa a.</h3>
+        <p><b>Deskripsyon</b></p>
+        <p>{{ atik.deskripsyon }}</p>
+        <p><i>{{ atik.pri }} HTG</i></p>
+        <h5><i> {{ atik.specs }}</i></h5>
+    </div>
+ </div>
+ {% endfor %}
+
+{% endblock %}
