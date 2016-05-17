@@ -17,7 +17,7 @@ class Atik(models.Model):
     kontak = models.CharField(max_length=11, default='Nimewo telefon ou')
     pri = models.IntegerField(default='Pri pwodui a an HTG')
     end_date = models.DateField(['%Y-%m-%d %H:%M:%S'], null=True)
-    foto_atik = models.ImageField('img', upload_to='img_atik/', blank=True)
+    foto_atik = models.ImageField('img', upload_to='media/', blank=True)
 
     def __str__(self):
         return self.non_pwodui
@@ -30,3 +30,35 @@ class Atik(models.Model):
 
     def get_absolute_url(self):
         return reverse('market_blog.views.atik', args=[self.slug])
+
+class AutoLink(models.Model):
+    TRANS_CHOICES = (
+        ('1', 'automatique'),
+        ('2', 'shift'),
+    )
+    auto_name = models.CharField(max_length=100, default='mak machin nan')
+    auto_model = models.CharField(max_length=100, default='model machin nan')
+    transmission = models.CharField(max_length=255, choices=TRANS_CHOICES, default=TRANS_CHOICES[1], null=False)
+    color = models.CharField(max_length=50, default='kouleu machin nan')
+    slug = models.SlugField(unique=True, max_length=255, default='slug')
+    deskripsyon = models.TextField(default='Deskripsyon pwodui a')
+    specs = models.CharField(max_length=255, default='Kek lot detay sou pwodui a')
+    uploaded = models.DateField(auto_now_add=True, verbose_name='Pwodui sa online depi')
+    published = models.BooleanField(default=True)
+    seller = models.CharField(max_length=75, default='Moun kap vann nan')
+    kontak = models.CharField(max_length=11, default='Nimewo telefon ou')
+    pri = models.IntegerField(default='Pri pwodui a an HTG')
+    end_date = models.DateField(['%Y-%m-%d %H:%M:%S'], null=True)
+    foto_machin = models.ImageField('img', upload_to='foto_machin/', blank=True)
+
+    def __str__(self):
+        return '%s' % self.auto_name
+
+    class Meta:
+        ordering = ['uploaded']
+
+    def __unicode__(self):
+        return u'%s' % self.auto_name
+
+    def get_absolute_url(self):
+        return reverse('market_blog.views.auto', args=[self.slug])

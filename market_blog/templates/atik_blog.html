@@ -2,7 +2,7 @@
 {% load staticfiles %}
 {% block content %}
 
- <p></p>
+
 {% for atik in atiks %}
  <div class="panel panel-primary">
     <div class="panel-heading">{{ atik.non_pwodui }}</div>
@@ -13,6 +13,7 @@
         <p><i>{{ atik.pri }} HTG</i></p>
         <h5><i> {{ atik.specs }}</i></h5>
         <h5><b><i> HMU at +{{ atik.kontak }} !!</i></b></h5>
+        <img src="{{ MEDIA_URL }}{{ atik.foto_atik }}"  width=40% height=40% />
     </div>
  </div>
  {% endfor %}

@@ -19,7 +19,7 @@
     <link href="{% static 'css/ie10-viewport-bug-workaround.css' %}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="{% static 'css/cover.css' %}" rel="stylesheet">
+    <link href="{% static 'css/blog.css' %}" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -33,34 +33,28 @@
   </head>
 
   <body>
-
-    <div class="site-wrapper">
-
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">AnGroDeto</h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li class="active"><a href="{% url 'index' %}">Akey</a></li>
-                  <li><a href="{% url 'atik' %}">Katalog</a></li>
-                  <li><a href="#">AutoLink</a></li>
-                  <li><a href="#">Kontak</a></li>
-                </ul>
+    <div class="blog-masthead">
+        <div class="container">
+              <nav class="blog-nav">
+                  <a class="blog-nav-item active" href="#">AnGroDeto</a>
+                  <a class="blog-nav-item" href="{% url 'index' %}">Akey</a>
+                  <a class="blog-nav-item" href="{% url 'atik' %}">Katalog</a>
+                  <a class="blog-nav-item" href="{% url 'autolink' %}">AutoLink</a>
+                  <a class="blog-nav-item" href="#">Kontak</a>
               </nav>
             </div>
           </div>
 
-            {% block content %}{% endblock %}
 
-          <div class="mastfoot">
+<div class="container">
+<br />
+            {% block content %}{% endblock %}
+</div>
+ <footer class="blog-footer">
             <div class="inner">
               <p>Sit sa kreye pa <a href="https://github.com/orgs/SHARPRISE/"> SHARPRISE </a></p>
             </div>
-          </div>
+          </footer>
 
         </div>
 
