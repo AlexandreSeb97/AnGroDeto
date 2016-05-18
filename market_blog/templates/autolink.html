@@ -1,5 +1,34 @@
 {% extends 'layout_en.html' %}
-
+{% load staticfiles %}
 {% block content %}
+
+{% for auto in autos %}
+<div class="panel-group" id="accordion">
+ <div class="panel panel-primary">
+    <div class="panel-heading">
+     <h4 class="panel-title">
+         <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ forloop.counter }}">{{ auto.auto_name }} {{ auto.auto_model }} &nbsp &nbsp See more &raquo</a>
+     </h4>
+        </div>
+     <div id="collapse{{ forloop.counter }}" class="panel-collapse collapse">
+    <div class="panel-body">
+        <h3><b>{{ auto.seller }}</b> ap vann pwodui sa a.</h3>
+        <p><b>Deskripsyon</b></p>
+        <p>{{ auto.deskripsyon }}</p>
+        <p><i>{{ auto.pri }} USD</i></p>
+        <h5><i> {{ auto.specs }} -
+            {% if auto.transmission == '1' %}
+            Automatique
+            {% else %}
+            shift
+            {% endif %} - {{ auto.color }}</i></h5>
+        <h5><b><i> HMU at +{{ auto.kontak }} !!</i></b></h5>
+        <img src="{{ MEDIA_URL }}{{ auto.foto_machin}}"  width=40% height=40% />
+        <p>{{ forloop.counter }}</p>
+    </div>
+     </div>
+ </div>
+    </div>
+ {% endfor %}
 
 {% endblock %}
