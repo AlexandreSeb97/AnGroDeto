@@ -57,6 +57,7 @@ def autolink_blog(request):
             'title': 'Machin ki pou vann nan AutoLink',
             'year': datetime.now().year,
             'date': datetime.now().date(),
+            'a': 1,
         })
     )
 

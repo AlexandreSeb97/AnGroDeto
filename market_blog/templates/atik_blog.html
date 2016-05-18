@@ -4,8 +4,14 @@
 
 
 {% for atik in atiks %}
+<div class="panel-group" id="accordion">
  <div class="panel panel-primary">
-    <div class="panel-heading">{{ atik.non_pwodui }}</div>
+    <div class="panel-heading">
+     <h4 class="panel-title">
+         <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ forloop.counter }}">{{ atik.non_pwodui }} &nbsp &nbsp See more &raquo</a>
+     </h4>
+        </div>
+     <div id="collapse{{ forloop.counter }}" class="panel-collapse collapse">
     <div class="panel-body">
         <h3><b>{{ atik.seller }}</b> ap vann pwodui sa a.</h3>
         <p><b>Deskripsyon</b></p>
@@ -14,8 +20,11 @@
         <h5><i> {{ atik.specs }}</i></h5>
         <h5><b><i> HMU at +{{ atik.kontak }} !!</i></b></h5>
         <img src="{{ MEDIA_URL }}{{ atik.foto_atik }}"  width=40% height=40% />
+        <p>{{ forloop.counter }}</p>
     </div>
+     </div>
  </div>
+    </div>
  {% endfor %}
 
 {% endblock %}
